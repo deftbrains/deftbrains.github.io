@@ -1,0 +1,79 @@
+
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="style.scss">
+        <title>Example</title>
+       
+        <style>
+            body {
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  font-family: system-ui;
+}
+h1 {
+  background: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+span {
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: monospace;
+}
+#genNew{
+    display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: monospace;
+}
+        </style>
+    </head>
+  
+    <body>
+        
+            <button id="genNew">
+
+                <pre>
+    .___      _____  __ ___.                .__               
+  __| _/_____/ ____\/  |\_ |______________  |__| ____   ______
+ / __ |/ __ \   __\\   __\ __ \_  __ \__  \ |  |/    \ /  ___/
+/ /_/ \  ___/|  |   |  | | \_\ \  | \// __ \|  |   |  \\___ \ 
+\____ |\___  >__|   |__| |___  /__|  (____  /__|___|  /____  >
+     \/    \/                \/           \/        \/     \/ 
+                </pre>
+            </button>
+            <!-- <span id="color"></span> -->
+          
+          
+          <script id="rendered-js" >
+            const setBg = () => {
+              const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+              document.body.style.backgroundColor = "#" + randomColor;
+              color.innerHTML = "#" + randomColor;
+            };
+            
+            genNew.addEventListener("click", setBg);
+            setBg();
+            //# sourceURL=pen.js
+                </script>
+    </body>
+    <footer>
+      <div class="copyright">
+        <h6><span itemprop="copyrightYear">2019</span></h6>
+        <!-- <span class="with-love">
+            <i class="fa fa-heart"></i>  </span>                    -->
+        <!-- <span class="author" itemprop="copyrightHolder">İsmet GÜZELGÜN</span> -->
+    </div>
+      <script type='text/javascript'>
+        var date = new Date();
+        document.querySelector(".copyright span").innerHTML = date.getFullYear();
+    </script>
+    </footer>
+</html>
